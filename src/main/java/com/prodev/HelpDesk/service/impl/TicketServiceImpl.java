@@ -4,10 +4,12 @@ import com.prodev.HelpDesk.model.Ticket;
 import com.prodev.HelpDesk.repository.TicketRepository;
 import com.prodev.HelpDesk.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
 
+@Service
 public class TicketServiceImpl implements TicketService {
     private TicketRepository ticketRepository;
     private JavaMail javaMail;
